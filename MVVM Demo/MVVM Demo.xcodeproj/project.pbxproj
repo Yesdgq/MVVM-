@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		113DAEAE215E05500018DCC6 /* YYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAEAD215E05500018DCC6 /* YYTableViewCell.m */; };
 		114BACAE2159DD4C0078AA87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BACAD2159DD4C0078AA87 /* AppDelegate.m */; };
 		114BACB12159DD4C0078AA87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BACB02159DD4C0078AA87 /* ViewController.m */; };
 		114BACB62159DD4D0078AA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114BACB52159DD4D0078AA87 /* Assets.xcassets */; };
 		114BACB92159DD4D0078AA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114BACB72159DD4D0078AA87 /* LaunchScreen.storyboard */; };
 		114BACBC2159DD4D0078AA87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BACBB2159DD4D0078AA87 /* main.m */; };
 		114BACC62159DD4E0078AA87 /* MVVM_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BACC52159DD4E0078AA87 /* MVVM_DemoUITests.m */; };
+		11B21D30215CCBF400C400CB /* YYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D2F215CCBF400C400CB /* YYView.m */; };
+		11B21D33215CCC3A00C400CB /* YYViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D32215CCC3A00C400CB /* YYViewModel.m */; };
+		11B21D36215CCC6400C400CB /* YYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D35215CCC6400C400CB /* YYViewController.m */; };
 		BE3E509C66A479D993552FE6 /* libPods-MVVM Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED409E11CBD0DBA6BDF5C29 /* libPods-MVVM Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +32,9 @@
 
 /* Begin PBXFileReference section */
 		0D73BD3DCA64AC4D1668360A /* Pods-MVVM Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM Demo/Pods-MVVM Demo.release.xcconfig"; sourceTree = "<group>"; };
+		113DAEAC215E05500018DCC6 /* YYTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewCell.h; sourceTree = "<group>"; };
+		113DAEAD215E05500018DCC6 /* YYTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTableViewCell.m; sourceTree = "<group>"; };
+		113DAEAF215E05CE0018DCC6 /* YYTableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewCellProtocol.h; sourceTree = "<group>"; };
 		114BACA92159DD4C0078AA87 /* MVVM Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		114BACAC2159DD4C0078AA87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		114BACAD2159DD4C0078AA87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,6 +47,17 @@
 		114BACC12159DD4E0078AA87 /* MVVM DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		114BACC52159DD4E0078AA87 /* MVVM_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVM_DemoUITests.m; sourceTree = "<group>"; };
 		114BACC72159DD4E0078AA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B21D20215CC18500C400CB /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B21D2C215CC7FF00C400CB /* YYViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewProtocol.h; sourceTree = "<group>"; };
+		11B21D2D215CC8AB00C400CB /* YYViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewControllerProtocol.h; sourceTree = "<group>"; };
+		11B21D2E215CCBF400C400CB /* YYView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYView.h; sourceTree = "<group>"; };
+		11B21D2F215CCBF400C400CB /* YYView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYView.m; sourceTree = "<group>"; };
+		11B21D31215CCC3A00C400CB /* YYViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewModel.h; sourceTree = "<group>"; };
+		11B21D32215CCC3A00C400CB /* YYViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYViewModel.m; sourceTree = "<group>"; };
+		11B21D34215CCC6400C400CB /* YYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewController.h; sourceTree = "<group>"; };
+		11B21D35215CCC6400C400CB /* YYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYViewController.m; sourceTree = "<group>"; };
+		11B21D37215CCCC700C400CB /* YYViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewModelProtocol.h; sourceTree = "<group>"; };
+		11B21D3B215CE3AF00C400CB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		5ED409E11CBD0DBA6BDF5C29 /* libPods-MVVM Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		616F12EA39B544C4D5727F62 /* Pods-MVVM Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM Demo/Pods-MVVM Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,14 +104,12 @@
 		114BACAB2159DD4C0078AA87 /* MVVM Demo */ = {
 			isa = PBXGroup;
 			children = (
-				114BACAC2159DD4C0078AA87 /* AppDelegate.h */,
-				114BACAD2159DD4C0078AA87 /* AppDelegate.m */,
+				11B21D22215CC1C000C400CB /* APPDelegate */,
 				114BACAF2159DD4C0078AA87 /* ViewController.h */,
 				114BACB02159DD4C0078AA87 /* ViewController.m */,
-				114BACB52159DD4D0078AA87 /* Assets.xcassets */,
-				114BACB72159DD4D0078AA87 /* LaunchScreen.storyboard */,
-				114BACBA2159DD4D0078AA87 /* Info.plist */,
-				114BACBB2159DD4D0078AA87 /* main.m */,
+				11B21D0E215CBF0F00C400CB /* Class */,
+				11B21D10215CBF5000C400CB /* Resource */,
+				11B21D3A215CE36500C400CB /* Supporting Files */,
 			);
 			path = "MVVM Demo";
 			sourceTree = "<group>";
@@ -105,6 +121,173 @@
 				114BACC72159DD4E0078AA87 /* Info.plist */,
 			);
 			path = "MVVM DemoUITests";
+			sourceTree = "<group>";
+		};
+		11B21D0E215CBF0F00C400CB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				11B21D17215CBFCC00C400CB /* General 通用类 */,
+				11B21D1E215CC06900C400CB /* Helpers 辅助类 */,
+				11B21D1D215CC06600C400CB /* Macro */,
+				11B21D1C215CC06300C400CB /* Sections 各模块 */,
+				11B21D1B215CC06000C400CB /* Vendors 第三方的类库SDK */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		11B21D0F215CBF3300C400CB /* Models 公共Model  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Models 公共Model ";
+			sourceTree = "<group>";
+		};
+		11B21D10215CBF5000C400CB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				11B21D13215CBF6700C400CB /* Fonts */,
+				11B21D12215CBF6400C400CB /* Images */,
+				11B21D11215CBF6100C400CB /* Sound */,
+				11B21D23215CC30200C400CB /* Videos */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		11B21D11215CBF6100C400CB /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		11B21D12215CBF6400C400CB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		11B21D13215CBF6700C400CB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		11B21D14215CBFC000C400CB /* Core 公共核心类 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Core 公共核心类";
+			sourceTree = "<group>";
+		};
+		11B21D15215CBFC400C400CB /* Categories 公共扩展类  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Categories 公共扩展类 ";
+			sourceTree = "<group>";
+		};
+		11B21D16215CBFC800C400CB /* Base 基类 */ = {
+			isa = PBXGroup;
+			children = (
+				11B21D34215CCC6400C400CB /* YYViewController.h */,
+				11B21D35215CCC6400C400CB /* YYViewController.m */,
+				11B21D2D215CC8AB00C400CB /* YYViewControllerProtocol.h */,
+				11B21D2E215CCBF400C400CB /* YYView.h */,
+				11B21D2F215CCBF400C400CB /* YYView.m */,
+				11B21D2C215CC7FF00C400CB /* YYViewProtocol.h */,
+				11B21D31215CCC3A00C400CB /* YYViewModel.h */,
+				11B21D32215CCC3A00C400CB /* YYViewModel.m */,
+				11B21D37215CCCC700C400CB /* YYViewModelProtocol.h */,
+				113DAEAC215E05500018DCC6 /* YYTableViewCell.h */,
+				113DAEAD215E05500018DCC6 /* YYTableViewCell.m */,
+				113DAEAF215E05CE0018DCC6 /* YYTableViewCellProtocol.h */,
+			);
+			path = "Base 基类";
+			sourceTree = "<group>";
+		};
+		11B21D17215CBFCC00C400CB /* General 通用类 */ = {
+			isa = PBXGroup;
+			children = (
+				11B21D16215CBFC800C400CB /* Base 基类 */,
+				11B21D15215CBFC400C400CB /* Categories 公共扩展类  */,
+				11B21D14215CBFC000C400CB /* Core 公共核心类 */,
+				11B21D0F215CBF3300C400CB /* Models 公共Model  */,
+				11B21D19215CC02800C400CB /* Public */,
+				11B21D18215CC02500C400CB /* Views 公共View */,
+			);
+			path = "General 通用类";
+			sourceTree = "<group>";
+		};
+		11B21D18215CC02500C400CB /* Views 公共View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Views 公共View";
+			sourceTree = "<group>";
+		};
+		11B21D19215CC02800C400CB /* Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		11B21D1B215CC06000C400CB /* Vendors 第三方的类库SDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Vendors 第三方的类库SDK";
+			sourceTree = "<group>";
+		};
+		11B21D1C215CC06300C400CB /* Sections 各模块 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sections 各模块";
+			sourceTree = "<group>";
+		};
+		11B21D1D215CC06600C400CB /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		11B21D1E215CC06900C400CB /* Helpers 辅助类 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Helpers 辅助类";
+			sourceTree = "<group>";
+		};
+		11B21D22215CC1C000C400CB /* APPDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				114BACAC2159DD4C0078AA87 /* AppDelegate.h */,
+				114BACAD2159DD4C0078AA87 /* AppDelegate.m */,
+			);
+			path = APPDelegate;
+			sourceTree = "<group>";
+		};
+		11B21D23215CC30200C400CB /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		11B21D3A215CE36500C400CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				114BACB72159DD4D0078AA87 /* LaunchScreen.storyboard */,
+				114BACBB2159DD4D0078AA87 /* main.m */,
+				114BACBA2159DD4D0078AA87 /* Info.plist */,
+				114BACB52159DD4D0078AA87 /* Assets.xcassets */,
+				11B21D3B215CE3AF00C400CB /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4CDF0C7A2BCF968E2D497485 /* Pods */ = {
@@ -119,6 +302,7 @@
 		946B1CC4E481A478638DD8DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11B21D20215CC18500C400CB /* libMJRefresh.a */,
 				5ED409E11CBD0DBA6BDF5C29 /* libPods-MVVM Demo.a */,
 			);
 			name = Frameworks;
@@ -264,6 +448,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113DAEAE215E05500018DCC6 /* YYTableViewCell.m in Sources */,
+				11B21D36215CCC6400C400CB /* YYViewController.m in Sources */,
+				11B21D33215CCC3A00C400CB /* YYViewModel.m in Sources */,
+				11B21D30215CCBF400C400CB /* YYView.m in Sources */,
 				114BACB12159DD4C0078AA87 /* ViewController.m in Sources */,
 				114BACBC2159DD4D0078AA87 /* main.m in Sources */,
 				114BACAE2159DD4C0078AA87 /* AppDelegate.m in Sources */,
@@ -417,6 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5EPCRFAR9;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MVVM Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "MVVM Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,6 +624,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J5EPCRFAR9;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MVVM Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = "MVVM Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
