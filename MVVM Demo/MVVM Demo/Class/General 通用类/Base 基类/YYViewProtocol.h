@@ -12,6 +12,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum : NSUInteger {
+    YYHeaderRefresh_HasMoreData = 1,
+    YYHeaderRefresh_HasNoMoreData,
+    YYFooterRefresh_HasMoreData,
+    YYFooterRefresh_HasNoMoreData,
+    YYRefreshError,
+    YYRefreshUI,
+} YYRefreshDataStatus;
+
+
 @protocol YYViewProtocol <NSObject>
 
 @optional

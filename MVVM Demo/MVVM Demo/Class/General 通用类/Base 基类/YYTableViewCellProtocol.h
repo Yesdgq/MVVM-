@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 
 - (void)yy_setupViews;
-- (void)yy_bindViewModel;
 
 @end
 

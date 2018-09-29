@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithViewModel:(id <YYViewModelProtocol>)viewModle;
 
 - (void)yy_bindViewModel;
-- (void)yy_addSubViews;
+- (void)yy_addSubviews;
 - (void)yy_layoutNavigation;
 - (void)yy_getNewData;
 - (void)recoverKeyboard;

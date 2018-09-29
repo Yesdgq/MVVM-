@@ -21,7 +21,7 @@
     // 常用方法绑定到基类 方便调用
     [[viewController rac_signalForSelector:@selector(viewDidLoad)] subscribeNext:^(RACTuple * _Nullable x) {
         @strongify(viewController)
-        [viewController yy_addSubViews];
+        [viewController yy_addSubviews];
         [viewController yy_bindViewModel];
     }];
     
@@ -53,21 +53,21 @@
 /**
  *  添加控件
  */
-- (void)yd_addSubviews {}
+- (void)yy_addSubviews {}
 
 /**
  *  绑定
  */
-- (void)yd_bindViewModel {}
+- (void)yy_bindViewModel {}
 
 /**
  *  设置navation
  */
-- (void)yd_layoutNavigation {}
+- (void)yy_layoutNavigation {}
 
 /**
  *  初次获取数据
  */
-- (void)yd_getNewData {}
+- (void)yy_getNewData {}
 
 @end

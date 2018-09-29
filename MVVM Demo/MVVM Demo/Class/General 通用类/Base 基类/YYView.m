@@ -14,7 +14,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        // b一些必用函数写在基类里
+        // 一些必用函数写在基类里
         [self yy_setupViews];
         [self yy_bindViewModel];
     }

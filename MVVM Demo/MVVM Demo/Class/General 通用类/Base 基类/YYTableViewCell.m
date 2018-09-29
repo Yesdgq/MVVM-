@@ -31,6 +31,5 @@
 
 - (void)yy_setupViews {}
 
-- (void)yy_bindViewModel {}
 
 @end

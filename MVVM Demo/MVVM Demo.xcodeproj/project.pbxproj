@@ -8,8 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		113DAEAE215E05500018DCC6 /* YYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAEAD215E05500018DCC6 /* YYTableViewCell.m */; };
+		113DAEB9215E0F930018DCC6 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAEB8215E0F930018DCC6 /* HomePageViewController.m */; };
+		113DAEBD215E17550018DCC6 /* CircleListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAEBC215E17550018DCC6 /* CircleListView.m */; };
+		113DAEC0215E17CF0018DCC6 /* CircleListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAEBF215E17CF0018DCC6 /* CircleListViewModel.m */; };
+		113DAEC3215E1FCA0018DCC6 /* CircleListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAEC2215E1FCA0018DCC6 /* CircleListModel.m */; };
+		113DAEC6215E22520018DCC6 /* YYStartApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAEC5215E22520018DCC6 /* YYStartApp.m */; };
+		113DAEC9215E24A30018DCC6 /* YYThirdPartService.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAEC8215E24A30018DCC6 /* YYThirdPartService.m */; };
+		113DAECC215E2F650018DCC6 /* CircleCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAECB215E2F650018DCC6 /* CircleCellViewModel.m */; };
+		113DAECF215E36060018DCC6 /* CircleListHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAECE215E36060018DCC6 /* CircleListHeaderViewModel.m */; };
+		113DAED2215E36610018DCC6 /* CircleListSectionHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAED1215E36610018DCC6 /* CircleListSectionHeaderViewModel.m */; };
+		113DAED5215E3C110018DCC6 /* YYCoreToolCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 113DAED4215E3C110018DCC6 /* YYCoreToolCenter.m */; };
 		114BACAE2159DD4C0078AA87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BACAD2159DD4C0078AA87 /* AppDelegate.m */; };
-		114BACB12159DD4C0078AA87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BACB02159DD4C0078AA87 /* ViewController.m */; };
 		114BACB62159DD4D0078AA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114BACB52159DD4D0078AA87 /* Assets.xcassets */; };
 		114BACB92159DD4D0078AA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114BACB72159DD4D0078AA87 /* LaunchScreen.storyboard */; };
 		114BACBC2159DD4D0078AA87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BACBB2159DD4D0078AA87 /* main.m */; };
@@ -17,6 +26,11 @@
 		11B21D30215CCBF400C400CB /* YYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D2F215CCBF400C400CB /* YYView.m */; };
 		11B21D33215CCC3A00C400CB /* YYViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D32215CCC3A00C400CB /* YYViewModel.m */; };
 		11B21D36215CCC6400C400CB /* YYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D35215CCC6400C400CB /* YYViewController.m */; };
+		11DA829A215F19E800E6970F /* HomePageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DA8299215F19E800E6970F /* HomePageTableCell.m */; };
+		11DA829D215F1A1700E6970F /* YYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DA829C215F1A1700E6970F /* YYCollectionViewCell.m */; };
+		11DA82A1215F1AFA00E6970F /* CircleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DA82A0215F1AFA00E6970F /* CircleCollectionViewCell.m */; };
+		11DA82A4215F1B5A00E6970F /* CircleListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DA82A3215F1B5A00E6970F /* CircleListHeaderView.m */; };
+		11DA82A7215F1B7500E6970F /* CircleListSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DA82A6215F1B7500E6970F /* CircleListSectionHeaderView.m */; };
 		BE3E509C66A479D993552FE6 /* libPods-MVVM Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED409E11CBD0DBA6BDF5C29 /* libPods-MVVM Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -35,11 +49,29 @@
 		113DAEAC215E05500018DCC6 /* YYTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewCell.h; sourceTree = "<group>"; };
 		113DAEAD215E05500018DCC6 /* YYTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTableViewCell.m; sourceTree = "<group>"; };
 		113DAEAF215E05CE0018DCC6 /* YYTableViewCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTableViewCellProtocol.h; sourceTree = "<group>"; };
+		113DAEB7215E0F930018DCC6 /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		113DAEB8215E0F930018DCC6 /* HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		113DAEBB215E17550018DCC6 /* CircleListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleListView.h; sourceTree = "<group>"; };
+		113DAEBC215E17550018DCC6 /* CircleListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleListView.m; sourceTree = "<group>"; };
+		113DAEBE215E17CF0018DCC6 /* CircleListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleListViewModel.h; sourceTree = "<group>"; };
+		113DAEBF215E17CF0018DCC6 /* CircleListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleListViewModel.m; sourceTree = "<group>"; };
+		113DAEC1215E1FCA0018DCC6 /* CircleListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleListModel.h; sourceTree = "<group>"; };
+		113DAEC2215E1FCA0018DCC6 /* CircleListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleListModel.m; sourceTree = "<group>"; };
+		113DAEC4215E22520018DCC6 /* YYStartApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYStartApp.h; sourceTree = "<group>"; };
+		113DAEC5215E22520018DCC6 /* YYStartApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYStartApp.m; sourceTree = "<group>"; };
+		113DAEC7215E24A30018DCC6 /* YYThirdPartService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYThirdPartService.h; sourceTree = "<group>"; };
+		113DAEC8215E24A30018DCC6 /* YYThirdPartService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYThirdPartService.m; sourceTree = "<group>"; };
+		113DAECA215E2F650018DCC6 /* CircleCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleCellViewModel.h; sourceTree = "<group>"; };
+		113DAECB215E2F650018DCC6 /* CircleCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleCellViewModel.m; sourceTree = "<group>"; };
+		113DAECD215E36060018DCC6 /* CircleListHeaderViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleListHeaderViewModel.h; sourceTree = "<group>"; };
+		113DAECE215E36060018DCC6 /* CircleListHeaderViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleListHeaderViewModel.m; sourceTree = "<group>"; };
+		113DAED0215E36610018DCC6 /* CircleListSectionHeaderViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleListSectionHeaderViewModel.h; sourceTree = "<group>"; };
+		113DAED1215E36610018DCC6 /* CircleListSectionHeaderViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleListSectionHeaderViewModel.m; sourceTree = "<group>"; };
+		113DAED3215E3C110018DCC6 /* YYCoreToolCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCoreToolCenter.h; sourceTree = "<group>"; };
+		113DAED4215E3C110018DCC6 /* YYCoreToolCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCoreToolCenter.m; sourceTree = "<group>"; };
 		114BACA92159DD4C0078AA87 /* MVVM Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		114BACAC2159DD4C0078AA87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		114BACAD2159DD4C0078AA87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		114BACAF2159DD4C0078AA87 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		114BACB02159DD4C0078AA87 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		114BACB52159DD4D0078AA87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114BACB82159DD4D0078AA87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		114BACBA2159DD4D0078AA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +90,17 @@
 		11B21D35215CCC6400C400CB /* YYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYViewController.m; sourceTree = "<group>"; };
 		11B21D37215CCCC700C400CB /* YYViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewModelProtocol.h; sourceTree = "<group>"; };
 		11B21D3B215CE3AF00C400CB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		11DA8298215F19E800E6970F /* HomePageTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageTableCell.h; sourceTree = "<group>"; };
+		11DA8299215F19E800E6970F /* HomePageTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageTableCell.m; sourceTree = "<group>"; };
+		11DA829B215F1A1700E6970F /* YYCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCollectionViewCell.h; sourceTree = "<group>"; };
+		11DA829C215F1A1700E6970F /* YYCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCollectionViewCell.m; sourceTree = "<group>"; };
+		11DA829E215F1A5300E6970F /* YYCollectionViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCollectionViewProtocol.h; sourceTree = "<group>"; };
+		11DA829F215F1AFA00E6970F /* CircleCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleCollectionViewCell.h; sourceTree = "<group>"; };
+		11DA82A0215F1AFA00E6970F /* CircleCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleCollectionViewCell.m; sourceTree = "<group>"; };
+		11DA82A2215F1B5A00E6970F /* CircleListHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleListHeaderView.h; sourceTree = "<group>"; };
+		11DA82A3215F1B5A00E6970F /* CircleListHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleListHeaderView.m; sourceTree = "<group>"; };
+		11DA82A5215F1B7500E6970F /* CircleListSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleListSectionHeaderView.h; sourceTree = "<group>"; };
+		11DA82A6215F1B7500E6970F /* CircleListSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleListSectionHeaderView.m; sourceTree = "<group>"; };
 		5ED409E11CBD0DBA6BDF5C29 /* libPods-MVVM Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		616F12EA39B544C4D5727F62 /* Pods-MVVM Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM Demo/Pods-MVVM Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +124,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113DAEB0215E0E940018DCC6 /* yesdgq Section */ = {
+			isa = PBXGroup;
+			children = (
+				113DAEB6215E0EC80018DCC6 /* HomePage */,
+			);
+			path = "yesdgq Section";
+			sourceTree = "<group>";
+		};
+		113DAEB1215E0EB90018DCC6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		113DAEB2215E0EBC0018DCC6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				113DAEBE215E17CF0018DCC6 /* CircleListViewModel.h */,
+				113DAEBF215E17CF0018DCC6 /* CircleListViewModel.m */,
+				113DAECA215E2F650018DCC6 /* CircleCellViewModel.h */,
+				113DAECB215E2F650018DCC6 /* CircleCellViewModel.m */,
+				113DAECD215E36060018DCC6 /* CircleListHeaderViewModel.h */,
+				113DAECE215E36060018DCC6 /* CircleListHeaderViewModel.m */,
+				113DAED0215E36610018DCC6 /* CircleListSectionHeaderViewModel.h */,
+				113DAED1215E36610018DCC6 /* CircleListSectionHeaderViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		113DAEB3215E0EBF0018DCC6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				113DAEB7215E0F930018DCC6 /* HomePageViewController.h */,
+				113DAEB8215E0F930018DCC6 /* HomePageViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		113DAEB4215E0EC20018DCC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				113DAEBB215E17550018DCC6 /* CircleListView.h */,
+				113DAEBC215E17550018DCC6 /* CircleListView.m */,
+				11DA8298215F19E800E6970F /* HomePageTableCell.h */,
+				11DA8299215F19E800E6970F /* HomePageTableCell.m */,
+				11DA829F215F1AFA00E6970F /* CircleCollectionViewCell.h */,
+				11DA82A0215F1AFA00E6970F /* CircleCollectionViewCell.m */,
+				11DA82A2215F1B5A00E6970F /* CircleListHeaderView.h */,
+				11DA82A3215F1B5A00E6970F /* CircleListHeaderView.m */,
+				11DA82A5215F1B7500E6970F /* CircleListSectionHeaderView.h */,
+				11DA82A6215F1B7500E6970F /* CircleListSectionHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		113DAEB5215E0EC50018DCC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				113DAEC1215E1FCA0018DCC6 /* CircleListModel.h */,
+				113DAEC2215E1FCA0018DCC6 /* CircleListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		113DAEB6215E0EC80018DCC6 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				113DAEB3215E0EBF0018DCC6 /* ViewController */,
+				113DAEB4215E0EC20018DCC6 /* View */,
+				113DAEB5215E0EC50018DCC6 /* Model */,
+				113DAEB2215E0EBC0018DCC6 /* ViewModel */,
+				113DAEB1215E0EB90018DCC6 /* New Group */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
 		114BACA02159DD4C0078AA87 = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				11B21D22215CC1C000C400CB /* APPDelegate */,
-				114BACAF2159DD4C0078AA87 /* ViewController.h */,
-				114BACB02159DD4C0078AA87 /* ViewController.m */,
 				11B21D0E215CBF0F00C400CB /* Class */,
 				11B21D10215CBF5000C400CB /* Resource */,
 				11B21D3A215CE36500C400CB /* Supporting Files */,
@@ -129,8 +247,8 @@
 				11B21D17215CBFCC00C400CB /* General 通用类 */,
 				11B21D1E215CC06900C400CB /* Helpers 辅助类 */,
 				11B21D1D215CC06600C400CB /* Macro */,
-				11B21D1C215CC06300C400CB /* Sections 各模块 */,
 				11B21D1B215CC06000C400CB /* Vendors 第三方的类库SDK */,
+				11B21D1C215CC06300C400CB /* Sections 各模块 */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -177,6 +295,8 @@
 		11B21D14215CBFC000C400CB /* Core 公共核心类 */ = {
 			isa = PBXGroup;
 			children = (
+				113DAED3215E3C110018DCC6 /* YYCoreToolCenter.h */,
+				113DAED4215E3C110018DCC6 /* YYCoreToolCenter.m */,
 			);
 			path = "Core 公共核心类";
 			sourceTree = "<group>";
@@ -203,6 +323,9 @@
 				113DAEAC215E05500018DCC6 /* YYTableViewCell.h */,
 				113DAEAD215E05500018DCC6 /* YYTableViewCell.m */,
 				113DAEAF215E05CE0018DCC6 /* YYTableViewCellProtocol.h */,
+				11DA829B215F1A1700E6970F /* YYCollectionViewCell.h */,
+				11DA829C215F1A1700E6970F /* YYCollectionViewCell.m */,
+				11DA829E215F1A5300E6970F /* YYCollectionViewProtocol.h */,
 			);
 			path = "Base 基类";
 			sourceTree = "<group>";
@@ -244,6 +367,7 @@
 		11B21D1C215CC06300C400CB /* Sections 各模块 */ = {
 			isa = PBXGroup;
 			children = (
+				113DAEB0215E0E940018DCC6 /* yesdgq Section */,
 			);
 			path = "Sections 各模块";
 			sourceTree = "<group>";
@@ -267,6 +391,10 @@
 			children = (
 				114BACAC2159DD4C0078AA87 /* AppDelegate.h */,
 				114BACAD2159DD4C0078AA87 /* AppDelegate.m */,
+				113DAEC4215E22520018DCC6 /* YYStartApp.h */,
+				113DAEC5215E22520018DCC6 /* YYStartApp.m */,
+				113DAEC7215E24A30018DCC6 /* YYThirdPartService.h */,
+				113DAEC8215E24A30018DCC6 /* YYThirdPartService.m */,
 			);
 			path = APPDelegate;
 			sourceTree = "<group>";
@@ -431,10 +559,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MVVM Demo/Pods-MVVM Demo-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -448,13 +578,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				113DAEB9215E0F930018DCC6 /* HomePageViewController.m in Sources */,
+				113DAEBD215E17550018DCC6 /* CircleListView.m in Sources */,
 				113DAEAE215E05500018DCC6 /* YYTableViewCell.m in Sources */,
 				11B21D36215CCC6400C400CB /* YYViewController.m in Sources */,
+				113DAECF215E36060018DCC6 /* CircleListHeaderViewModel.m in Sources */,
+				113DAECC215E2F650018DCC6 /* CircleCellViewModel.m in Sources */,
 				11B21D33215CCC3A00C400CB /* YYViewModel.m in Sources */,
+				113DAEC9215E24A30018DCC6 /* YYThirdPartService.m in Sources */,
+				113DAEC0215E17CF0018DCC6 /* CircleListViewModel.m in Sources */,
+				11DA82A1215F1AFA00E6970F /* CircleCollectionViewCell.m in Sources */,
+				113DAED2215E36610018DCC6 /* CircleListSectionHeaderViewModel.m in Sources */,
+				11DA82A4215F1B5A00E6970F /* CircleListHeaderView.m in Sources */,
 				11B21D30215CCBF400C400CB /* YYView.m in Sources */,
-				114BACB12159DD4C0078AA87 /* ViewController.m in Sources */,
+				113DAEC6215E22520018DCC6 /* YYStartApp.m in Sources */,
+				11DA829D215F1A1700E6970F /* YYCollectionViewCell.m in Sources */,
 				114BACBC2159DD4D0078AA87 /* main.m in Sources */,
+				11DA82A7215F1B7500E6970F /* CircleListSectionHeaderView.m in Sources */,
+				11DA829A215F19E800E6970F /* HomePageTableCell.m in Sources */,
+				113DAEC3215E1FCA0018DCC6 /* CircleListModel.m in Sources */,
 				114BACAE2159DD4C0078AA87 /* AppDelegate.m in Sources */,
+				113DAED5215E3C110018DCC6 /* YYCoreToolCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
