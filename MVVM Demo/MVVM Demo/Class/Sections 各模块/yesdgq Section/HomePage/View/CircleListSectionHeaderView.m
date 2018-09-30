@@ -36,24 +36,24 @@
 }
 
 - (void)updateConstraints {
-//    CGFloat paddingEdge = 10;
-//
-//    [self.bgImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(self);
-//    }];
-//
-//    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.centerY.equalTo(self);
-//        make.left.equalTo(@(paddingEdge));
-//        make.right.equalTo(@(-paddingEdge));
-//        make.height.equalTo(@(20));
-//    }];
-//
-//    [self.lineImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.right.bottom.equalTo(self);
-//        make.height.equalTo(@(1.0));
-//    }];
-//
+    CGFloat paddingEdge = 10;
+
+    [self.bgImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self);
+    }];
+
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self);
+        make.left.equalTo(@(paddingEdge));
+        make.right.equalTo(@(-paddingEdge));
+        make.height.equalTo(@(20));
+    }];
+
+    [self.lineImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.bottom.equalTo(self);
+        make.height.equalTo(@(1.0));
+    }];
+
     [super updateConstraints];
 }
 

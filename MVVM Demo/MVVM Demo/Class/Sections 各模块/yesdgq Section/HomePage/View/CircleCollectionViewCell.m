@@ -28,19 +28,19 @@
 }
 
 - (void)updateConstraints {
-//    CGFloat paddingEdge = 10;
-//    
-//    [self.headerImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.left.right.equalTo(self.contentView);
-//        make.height.equalTo(@(80));
-//    }];
-//    
-//    [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.equalTo(self.headerImageView.mas_bottom).offset(paddingEdge);
-//        make.height.equalTo(@(15));
-//        make.left.right.equalTo(self.headerImageView);
-//    }];
-//    
+    CGFloat paddingEdge = 10;
+    
+    [self.headerImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.equalTo(self.contentView);
+        make.height.equalTo(@(80));
+    }];
+    
+    [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.headerImageView.mas_bottom).offset(paddingEdge);
+        make.height.equalTo(@(15));
+        make.left.right.equalTo(self.headerImageView);
+    }];
+    
     [super updateConstraints];
 }
 
@@ -48,7 +48,7 @@
 
 - (void)setViewModel:(CircleCellViewModel *)viewModel {
     if (viewModel) {
-        [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.headerImageStr] placeholderImage:[UIImage imageNamed:@""]];
+        [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.headerImageStr] placeholderImage:[UIImage imageNamed:@"quanzi"]];
         self.nameLabel.text = viewModel.name;
         
         _viewModel = viewModel;
@@ -56,7 +56,7 @@
 }
 
 - (void)setType:(NSString *)type {
-    self.headerImageView.image = [UIImage imageNamed:@""];
+    self.headerImageView.image = [UIImage imageNamed:@"xiaokule"];
     self.nameLabel.text = @"加入新圈子";
 }
 

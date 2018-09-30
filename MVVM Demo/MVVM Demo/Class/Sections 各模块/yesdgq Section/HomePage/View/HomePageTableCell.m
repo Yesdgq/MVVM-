@@ -33,7 +33,7 @@
 
 }
 
-- (void)yd_setupViews {
+- (void)yy_setupViews {
     [self.contentView addSubview:self.headerImageView];
     [self.contentView addSubview:self.nameLabel];
     [self.contentView addSubview:self.articleImageView];
@@ -50,62 +50,62 @@
 - (void)updateConstraints {
     CGFloat paddingEdge = 10;
     
-//    [self.headerImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(@(paddingEdge));
-//        make.centerY.equalTo(self.contentView);
-//        make.size.mas_equalTo(CGSizeMake(80, 80));
-//    }];
-//    
-//    [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        
-//        make.left.equalTo(self.headerImageView.mas_right).offset(paddingEdge);
-//        make.top.equalTo(self.headerImageView);
-//        make.right.equalTo(@(-paddingEdge));
-//        make.height.equalTo(@15);
-//    }];
-//    
-//    [self.articleImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        
-//        make.left.equalTo(self.nameLabel);
-//        make.size.mas_equalTo(CGSizeMake(15, 15));
-//        make.top.equalTo(self.nameLabel.mas_bottom).offset(paddingEdge);
-//    }];
-//    
-//    [self.articleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        
-//        make.left.equalTo(self.articleImageView.mas_right).offset(3);
-//        make.size.mas_equalTo(CGSizeMake(50, 15));
-//        make.centerY.equalTo(self.articleImageView);
-//    }];
-//    
-//    [self.peopleImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        
-//        make.left.equalTo(self.articleLabel.mas_right).offset(paddingEdge);
-//        make.size.mas_equalTo(CGSizeMake(15, 15));
-//        make.centerY.equalTo(self.articleImageView);
-//    }];
-//    
-//    [self.peopleNumLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        
-//        make.left.equalTo(self.peopleImageView.mas_right).offset(3);
-//        make.centerY.equalTo(self.peopleImageView);
-//        make.size.mas_equalTo(CGSizeMake(50, 15));
-//    }];
-//    
-//    [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        
-//        make.top.equalTo(self.articleImageView.mas_bottom).offset(paddingEdge);
-//        make.left.equalTo(self.articleImageView);
-//        make.right.equalTo(@(-paddingEdge));
-//        make.height.equalTo(@15);
-//    }];
-//    
-//    [self.lineImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        
-//        make.bottom.left.right.equalTo(self.contentView);
-//        make.height.equalTo(@1.0);
-//    }];
-//    
+    [self.headerImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@(paddingEdge));
+        make.centerY.equalTo(self.contentView);
+        make.size.mas_equalTo(CGSizeMake(80, 80));
+    }];
+    
+    [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.equalTo(self.headerImageView.mas_right).offset(paddingEdge);
+        make.top.equalTo(self.headerImageView);
+        make.right.equalTo(@(-paddingEdge));
+        make.height.equalTo(@15);
+    }];
+    
+    [self.articleImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.equalTo(self.nameLabel);
+        make.size.mas_equalTo(CGSizeMake(15, 15));
+        make.top.equalTo(self.nameLabel.mas_bottom).offset(paddingEdge);
+    }];
+    
+    [self.articleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.equalTo(self.articleImageView.mas_right).offset(3);
+        make.size.mas_equalTo(CGSizeMake(50, 15));
+        make.centerY.equalTo(self.articleImageView);
+    }];
+    
+    [self.peopleImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.equalTo(self.articleLabel.mas_right).offset(paddingEdge);
+        make.size.mas_equalTo(CGSizeMake(15, 15));
+        make.centerY.equalTo(self.articleImageView);
+    }];
+    
+    [self.peopleNumLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.equalTo(self.peopleImageView.mas_right).offset(3);
+        make.centerY.equalTo(self.peopleImageView);
+        make.size.mas_equalTo(CGSizeMake(50, 15));
+    }];
+    
+    [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.equalTo(self.articleImageView.mas_bottom).offset(paddingEdge);
+        make.left.equalTo(self.articleImageView);
+        make.right.equalTo(@(-paddingEdge));
+        make.height.equalTo(@15);
+    }];
+    
+    [self.lineImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.bottom.left.right.equalTo(self.contentView);
+        make.height.equalTo(@1.0);
+    }];
+    
     [super updateConstraints];
 }
 
@@ -113,7 +113,7 @@
 
 - (void)setViewModel:(CircleCellViewModel *)viewModel {
     if (viewModel) {
-        [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.headerImageStr] placeholderImage:[UIImage imageNamed:@""]];
+        [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.headerImageStr] placeholderImage:[UIImage imageNamed:@"panda"]];
         self.nameLabel.text = viewModel.name;
         self.articleLabel.text = viewModel.articleNum;
         self.peopleNumLabel.text = viewModel.peopleNum;
@@ -143,7 +143,7 @@
 - (UIImageView *)articleImageView {
     if (!_articleImageView) {
         _articleImageView = [[UIImageView alloc] init];
-        _articleImageView.backgroundColor = [UIColor redColor];
+        _articleImageView.backgroundColor = [UIColor cyanColor];
     }
     return _articleImageView;
 }
@@ -183,7 +183,7 @@
 - (UIImageView *)lineImageView {
     if (!_lineImageView) {
         _lineImageView = [[UIImageView alloc] init];
-        _lineImageView.backgroundColor = [UIColor darkGrayColor];
+        _lineImageView.backgroundColor = [UIColor lightGrayColor];
     }
     return _lineImageView;
 }

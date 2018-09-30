@@ -38,26 +38,26 @@
 }
 
 - (void)updateConstraints {
-//    CGFloat paddingEdge = 10;
-//    
-//    [self.bgView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.right.top.equalTo(self);
-//        make.bottom.equalTo(@(-paddingEdge));
-//    }];
-//    
-//    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.equalTo(@(paddingEdge));
-//        make.top.equalTo(@(paddingEdge));
-//        make.right.equalTo(@(-paddingEdge));
-//        make.height.equalTo(@(20));
-//    }];
-//    
-//    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.right.equalTo(self);
-//        make.bottom.equalTo(self).offset(-paddingEdge);
-//        make.top.equalTo(self.titleLabel.mas_bottom).offset(paddingEdge);
-//    }];
-//    
+    CGFloat paddingEdge = 10;
+    
+    [self.bgView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.equalTo(self);
+        make.bottom.equalTo(@(-paddingEdge));
+    }];
+    
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@(paddingEdge));
+        make.top.equalTo(@(paddingEdge));
+        make.right.equalTo(@(-paddingEdge));
+        make.height.equalTo(@(20));
+    }];
+    
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self);
+        make.bottom.equalTo(self).offset(-paddingEdge);
+        make.top.equalTo(self.titleLabel.mas_bottom).offset(paddingEdge);
+    }];
+    
     [super updateConstraints];
 }
 

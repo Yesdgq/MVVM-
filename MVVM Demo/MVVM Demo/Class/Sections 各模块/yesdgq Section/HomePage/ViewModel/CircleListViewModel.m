@@ -21,7 +21,6 @@
     
     @weakify(self)
     [self.refreshDataCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
-        
         @strongify(self)
         NSMutableArray *alArray = [NSMutableArray arrayWithCapacity:0];
         for (int i = 0; i < 8; i++) {
@@ -51,16 +50,12 @@
     }];
     
     [[[self.refreshDataCommand.executing skip:1] take:1] subscribeNext:^(NSNumber * _Nullable x) {
-        
         if ([x isEqualToNumber:@(YES)]) {
             ShowMaskStatus(@"正在加载");
-            DismissHud();
-            
         }
     }];
     
     [self.nextPageCommand.executionSignals.switchToLatest subscribeNext:^(NSDictionary  *dict) {
-        
         @strongify(self)
         NSMutableArray *reArray = [[NSMutableArray alloc] initWithArray:self.dataArray];
         for (int i = 0; i < 8; i++) {
