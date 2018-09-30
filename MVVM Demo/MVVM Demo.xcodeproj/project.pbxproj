@@ -23,6 +23,9 @@
 		114BACB92159DD4D0078AA87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114BACB72159DD4D0078AA87 /* LaunchScreen.storyboard */; };
 		114BACBC2159DD4D0078AA87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BACBB2159DD4D0078AA87 /* main.m */; };
 		114BACC62159DD4E0078AA87 /* MVVM_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BACC52159DD4E0078AA87 /* MVVM_DemoUITests.m */; };
+		114ECEB82160BFC400DEDFCD /* SecondHomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 114ECEB72160BFC400DEDFCD /* SecondHomePageVC.m */; };
+		114ECEBF2160C13900DEDFCD /* SecondDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 114ECEBE2160C13900DEDFCD /* SecondDetailVC.m */; };
+		114ECEC22160C52500DEDFCD /* SecondHomePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 114ECEC12160C52500DEDFCD /* SecondHomePageView.m */; };
 		11B21D30215CCBF400C400CB /* YYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D2F215CCBF400C400CB /* YYView.m */; };
 		11B21D33215CCC3A00C400CB /* YYViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D32215CCC3A00C400CB /* YYViewModel.m */; };
 		11B21D36215CCC6400C400CB /* YYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D35215CCC6400C400CB /* YYViewController.m */; };
@@ -79,6 +82,12 @@
 		114BACC12159DD4E0078AA87 /* MVVM DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		114BACC52159DD4E0078AA87 /* MVVM_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVM_DemoUITests.m; sourceTree = "<group>"; };
 		114BACC72159DD4E0078AA87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		114ECEB62160BFC400DEDFCD /* SecondHomePageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondHomePageVC.h; sourceTree = "<group>"; };
+		114ECEB72160BFC400DEDFCD /* SecondHomePageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondHomePageVC.m; sourceTree = "<group>"; };
+		114ECEBD2160C13900DEDFCD /* SecondDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondDetailVC.h; sourceTree = "<group>"; };
+		114ECEBE2160C13900DEDFCD /* SecondDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondDetailVC.m; sourceTree = "<group>"; };
+		114ECEC02160C52500DEDFCD /* SecondHomePageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondHomePageView.h; sourceTree = "<group>"; };
+		114ECEC12160C52500DEDFCD /* SecondHomePageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondHomePageView.m; sourceTree = "<group>"; };
 		11B21D20215CC18500C400CB /* libMJRefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMJRefresh.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B21D2C215CC7FF00C400CB /* YYViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewProtocol.h; sourceTree = "<group>"; };
 		11B21D2D215CC8AB00C400CB /* YYViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewControllerProtocol.h; sourceTree = "<group>"; };
@@ -241,6 +250,51 @@
 			path = "MVVM DemoUITests";
 			sourceTree = "<group>";
 		};
+		114ECEB52160BF4400DEDFCD /* MVVM另一种模式 */ = {
+			isa = PBXGroup;
+			children = (
+				114ECEBB2160C03C00DEDFCD /* ViewController */,
+				114ECEBC2160C05500DEDFCD /* View */,
+				114ECEBA2160C03A00DEDFCD /* Model */,
+				114ECEB92160C03800DEDFCD /* ViewModel */,
+			);
+			path = "MVVM另一种模式";
+			sourceTree = "<group>";
+		};
+		114ECEB92160C03800DEDFCD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		114ECEBA2160C03A00DEDFCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		114ECEBB2160C03C00DEDFCD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				114ECEB62160BFC400DEDFCD /* SecondHomePageVC.h */,
+				114ECEB72160BFC400DEDFCD /* SecondHomePageVC.m */,
+				114ECEBD2160C13900DEDFCD /* SecondDetailVC.h */,
+				114ECEBE2160C13900DEDFCD /* SecondDetailVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		114ECEBC2160C05500DEDFCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				114ECEC02160C52500DEDFCD /* SecondHomePageView.h */,
+				114ECEC12160C52500DEDFCD /* SecondHomePageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		11B21D0E215CBF0F00C400CB /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +422,7 @@
 			isa = PBXGroup;
 			children = (
 				113DAEB0215E0E940018DCC6 /* yesdgq Section */,
+				114ECEB52160BF4400DEDFCD /* MVVM另一种模式 */,
 			);
 			path = "Sections 各模块";
 			sourceTree = "<group>";
@@ -590,10 +645,13 @@
 				11DA82A1215F1AFA00E6970F /* CircleCollectionViewCell.m in Sources */,
 				113DAED2215E36610018DCC6 /* CircleListSectionHeaderViewModel.m in Sources */,
 				11DA82A4215F1B5A00E6970F /* CircleListHeaderView.m in Sources */,
+				114ECEC22160C52500DEDFCD /* SecondHomePageView.m in Sources */,
 				11B21D30215CCBF400C400CB /* YYView.m in Sources */,
 				113DAEC6215E22520018DCC6 /* YYStartApp.m in Sources */,
 				11DA829D215F1A1700E6970F /* YYCollectionViewCell.m in Sources */,
+				114ECEBF2160C13900DEDFCD /* SecondDetailVC.m in Sources */,
 				114BACBC2159DD4D0078AA87 /* main.m in Sources */,
+				114ECEB82160BFC400DEDFCD /* SecondHomePageVC.m in Sources */,
 				11DA82A7215F1B7500E6970F /* CircleListSectionHeaderView.m in Sources */,
 				11DA829A215F19E800E6970F /* HomePageTableCell.m in Sources */,
 				113DAEC3215E1FCA0018DCC6 /* CircleListModel.m in Sources */,

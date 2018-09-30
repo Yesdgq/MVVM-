@@ -10,6 +10,7 @@
 #import "CircleListView.h"
 #import "CircleListViewModel.h"
 #import "CircleCellViewModel.h"
+#import "SecondHomePageVC.h"
 
 @interface HomePageViewController ()
 
@@ -42,12 +43,25 @@
 }
 
 - (void)yy_bindViewModel {
+    
     @weakify(self)
+    // cell点击回调
     [[self.viewModel.cellClickSubject takeUntil:self.rac_willDeallocSignal] subscribeNext:^(CircleCellViewModel *cellViewModel) {
        @strongify(self)
+//        YYViewController *vc = [[YYViewController alloc] init];
+//        [self.navigationController pushViewController:vc animated:YES];
+        
+        SecondHomePageVC *secondHomeVC = [[SecondHomePageVC alloc] init];
+        [self.navigationController pushViewController:secondHomeVC animated:YES];
+    }];
+    
+    // 没搞懂干啥用的呢
+    [self.viewModel.listHeaderViewModel.addNewSubject subscribeNext:^(id x) {
+        @strongify(self);
         YYViewController *vc = [[YYViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }];
+    
 }
 
 - (void)yy_layoutNavigation {

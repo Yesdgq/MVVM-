@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) RACSubject *refreshUISubject;
 @property (nonatomic, strong) RACSubject *cellClickSubject;
+@property (nonatomic, strong) RACSubject *addNewSubject;
 
 @end
 

@@ -23,7 +23,7 @@
     [self.refreshDataCommand.executionSignals.switchToLatest subscribeNext:^(id  _Nullable x) {
         @strongify(self)
         NSMutableArray *alArray = [NSMutableArray arrayWithCapacity:0];
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 5; i++) {
             CircleCellViewModel *cellViewModel = [[CircleCellViewModel alloc] init];
             cellViewModel.headerImageStr = @"http://mmbiz.qpic.cn/mmbiz/XxE4icZUMxeFjluqQcibibdvEfUyYBgrQ3k7kdSMEB3vRwvjGecrPUPpHW0qZS21NFdOASOajiawm6vfKEZoyFoUVQ/640?wx_fmt=jpeg&wxfrom=5";
             cellViewModel.name = @"财税培训圈子";
