@@ -48,7 +48,8 @@
 
 - (void)setViewModel:(CircleCellViewModel *)viewModel {
     if (viewModel) {
-        [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.headerImageStr] placeholderImage:[UIImage imageNamed:@"quanzi"]];
+        //[self.headerImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.headerImageStr] placeholderImage:[UIImage imageNamed:@"quanzi"]];
+        [self.headerImageView yy_setImageWithURL:[NSURL URLWithString:viewModel.headerImageStr] placeholder:[UIImage imageNamed:@"quanzi"]];
         self.nameLabel.text = viewModel.name;
         
         _viewModel = viewModel;
@@ -56,7 +57,7 @@
 }
 
 - (void)setType:(NSString *)type {
-    self.headerImageView.image = [UIImage imageNamed:@"xiaokule"];
+    self.headerImageView.image = [UIImage imageNamed:@"add"];
     self.nameLabel.text = @"加入新圈子";
 }
 

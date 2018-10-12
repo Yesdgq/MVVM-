@@ -91,7 +91,7 @@ static NSString *IdentifierHomePageHeader = @"IdentifierHomePageHeader";
 
 @end
 
-#pragma - mark HomePageTableViewCell
+#pragma mark - HomePageTableViewCell
 
 @implementation HomePageTableViewCell
 
@@ -146,7 +146,7 @@ static NSString *IdentifierHomePageHeader = @"IdentifierHomePageHeader";
 @end
 
 
-#pragma - mark HomePageTableViewHeader
+#pragma mark - HomePageTableViewHeader
 
 
 @implementation HomePageTableViewHeader

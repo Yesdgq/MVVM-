@@ -25,7 +25,7 @@
         NSMutableArray *alArray = [NSMutableArray arrayWithCapacity:0];
         for (int i = 0; i < 5; i++) {
             CircleCellViewModel *cellViewModel = [[CircleCellViewModel alloc] init];
-            cellViewModel.headerImageStr = @"http://mmbiz.qpic.cn/mmbiz/XxE4icZUMxeFjluqQcibibdvEfUyYBgrQ3k7kdSMEB3vRwvjGecrPUPpHW0qZS21NFdOASOajiawm6vfKEZoyFoUVQ/640?wx_fmt=jpeg&wxfrom=5";
+            cellViewModel.headerImageStr = @"http://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83epkG7EAu8c7fgSqyx9CeYNfLGO6yfUz4xnefCNGIre8iaABa05x3s8pbeHcTm0ZvowFrWiaGUSoa5RA/132";
             cellViewModel.name = @"财税培训圈子";
             [alArray addObject:cellViewModel];
         }

@@ -20,5 +20,6 @@
 #import <SDWebImage/UIButton+WebCache.h>
 #import <YYCategories/YYCategories.h>
 #import <YYModel/YYModel.h>
+#import <YYWebImage.h>
 
 #endif /* PrefixHeader_pch */

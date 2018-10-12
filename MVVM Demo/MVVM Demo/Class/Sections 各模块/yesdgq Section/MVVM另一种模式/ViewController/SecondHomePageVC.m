@@ -48,7 +48,7 @@
 }
 
 
-#pragma - mark custom method
+#pragma mark - custom method
 
 - (void)rightBarButtonItemClickAction {
     NSLog(@"这个事件流需要分发向view传递,或者向view和viewModel传递,或者只向viewModel传递");
@@ -95,7 +95,7 @@
 }
 
 
-#pragma - mark getters and setters
+#pragma mark - getters and setters
 
 - (SecondHomePageView *)mainView {
     if (!_mainView) {

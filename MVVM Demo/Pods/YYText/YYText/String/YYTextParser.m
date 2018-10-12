@@ -16,7 +16,7 @@
 #import "NSParagraphStyle+YYText.h"
 
 
-#pragma mark - Markdown Parser
+#pragma mark mark -down Parser
 
 @implementation YYTextSimpleMarkdownParser {
     UIFont *_font;

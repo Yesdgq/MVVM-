@@ -22,7 +22,7 @@
 @implementation SecondHomePageViewViewModel
 
 
-#pragma - mark custom method
+#pragma mark - custom method
 
 - (void)testSendEventAction {
     NSLog(@"事件流传递到了VM中,做处理吧");
@@ -47,24 +47,27 @@
     });
 }
 
-#pragma mark -----------UITableViewDelegate,UITableViewDataSource-----------------
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+#pragma mark - UITableViewDelegate,UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.arrayData.count;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 60.0f;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 60.0f;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return CGFLOAT_MIN;
 }
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
     HomePageTableViewHeader *tableViewHeader =(HomePageTableViewHeader *)[HomePageTableViewHeader defaultHomePageTableViewHeader:tableView section:section];
     if([tableViewHeader respondsToSelector:@selector(HomePageTableViewHeaderClickAction:)]) return tableViewHeader;
     @weakify(self);
@@ -91,27 +94,33 @@
     return tableViewHeader;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     return nil;
 }
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     SecondHomePageViewModel *model = self.arrayData[indexPath.row];
     HomePageTableViewCell *cell = [HomePageTableViewCell defaultHomePageTableViewCell:tableView indexPath:indexPath text:model.contentText detailText:model.detailText imageName:model.imageName selected:[self.arraySelected[indexPath.row] boolValue]];
     // 如果cell上面有自定义按钮点击事件等,按照HomePageTableViewHeader做法在这个地方进行事件流接收
     return cell;
 }
-- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewCellEditingStyleDelete | UITableViewCellEditingStyleInsert;
 }
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
 }
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath {
     
 }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.arraySelected replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:YES]];
 }
+
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(3_0) {
     [self.arraySelected replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:NO]];
 }
