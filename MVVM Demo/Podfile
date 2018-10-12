@@ -15,6 +15,11 @@ target 'MVVM Demo' do
     pod 'YYCache',              '~> 1.0.3'
     pod 'SVProgressHUD'
     pod 'MJRefresh'
+    pod 'YYText'
+    pod 'YYModel'
+    pod 'YYWebImage'
+    pod 'YYDispatchQueuePool'
+    pod 'YYCategories'
     
 end
 

@@ -29,6 +29,8 @@
 		11B21D30215CCBF400C400CB /* YYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D2F215CCBF400C400CB /* YYView.m */; };
 		11B21D33215CCC3A00C400CB /* YYViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D32215CCC3A00C400CB /* YYViewModel.m */; };
 		11B21D36215CCC6400C400CB /* YYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21D35215CCC6400C400CB /* YYViewController.m */; };
+		11CBCB012170414500415E0F /* SecondHomePageViewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCB002170414500415E0F /* SecondHomePageViewViewModel.m */; };
+		11CBCB042170452F00415E0F /* SecondHomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCB032170452F00415E0F /* SecondHomePageViewModel.m */; };
 		11DA829A215F19E800E6970F /* HomePageTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DA8299215F19E800E6970F /* HomePageTableCell.m */; };
 		11DA829D215F1A1700E6970F /* YYCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DA829C215F1A1700E6970F /* YYCollectionViewCell.m */; };
 		11DA82A1215F1AFA00E6970F /* CircleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11DA82A0215F1AFA00E6970F /* CircleCollectionViewCell.m */; };
@@ -99,6 +101,10 @@
 		11B21D35215CCC6400C400CB /* YYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYViewController.m; sourceTree = "<group>"; };
 		11B21D37215CCCC700C400CB /* YYViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYViewModelProtocol.h; sourceTree = "<group>"; };
 		11B21D3B215CE3AF00C400CB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		11CBCAFF2170414500415E0F /* SecondHomePageViewViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondHomePageViewViewModel.h; sourceTree = "<group>"; };
+		11CBCB002170414500415E0F /* SecondHomePageViewViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondHomePageViewViewModel.m; sourceTree = "<group>"; };
+		11CBCB022170452F00415E0F /* SecondHomePageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondHomePageViewModel.h; sourceTree = "<group>"; };
+		11CBCB032170452F00415E0F /* SecondHomePageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondHomePageViewModel.m; sourceTree = "<group>"; };
 		11DA8298215F19E800E6970F /* HomePageTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageTableCell.h; sourceTree = "<group>"; };
 		11DA8299215F19E800E6970F /* HomePageTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageTableCell.m; sourceTree = "<group>"; };
 		11DA829B215F1A1700E6970F /* YYCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCollectionViewCell.h; sourceTree = "<group>"; };
@@ -137,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				113DAEB6215E0EC80018DCC6 /* HomePage */,
+				114ECEB52160BF4400DEDFCD /* MVVM另一种模式 */,
 			);
 			path = "yesdgq Section";
 			sourceTree = "<group>";
@@ -264,6 +271,8 @@
 		114ECEB92160C03800DEDFCD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				11CBCAFF2170414500415E0F /* SecondHomePageViewViewModel.h */,
+				11CBCB002170414500415E0F /* SecondHomePageViewViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -271,6 +280,8 @@
 		114ECEBA2160C03A00DEDFCD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				11CBCB022170452F00415E0F /* SecondHomePageViewModel.h */,
+				11CBCB032170452F00415E0F /* SecondHomePageViewModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -422,7 +433,6 @@
 			isa = PBXGroup;
 			children = (
 				113DAEB0215E0E940018DCC6 /* yesdgq Section */,
-				114ECEB52160BF4400DEDFCD /* MVVM另一种模式 */,
 			);
 			path = "Sections 各模块";
 			sourceTree = "<group>";
@@ -643,6 +653,7 @@
 				113DAEC9215E24A30018DCC6 /* YYThirdPartService.m in Sources */,
 				113DAEC0215E17CF0018DCC6 /* CircleListViewModel.m in Sources */,
 				11DA82A1215F1AFA00E6970F /* CircleCollectionViewCell.m in Sources */,
+				11CBCB042170452F00415E0F /* SecondHomePageViewModel.m in Sources */,
 				113DAED2215E36610018DCC6 /* CircleListSectionHeaderViewModel.m in Sources */,
 				11DA82A4215F1B5A00E6970F /* CircleListHeaderView.m in Sources */,
 				114ECEC22160C52500DEDFCD /* SecondHomePageView.m in Sources */,
@@ -652,6 +663,7 @@
 				114ECEBF2160C13900DEDFCD /* SecondDetailVC.m in Sources */,
 				114BACBC2159DD4D0078AA87 /* main.m in Sources */,
 				114ECEB82160BFC400DEDFCD /* SecondHomePageVC.m in Sources */,
+				11CBCB012170414500415E0F /* SecondHomePageViewViewModel.m in Sources */,
 				11DA82A7215F1B7500E6970F /* CircleListSectionHeaderView.m in Sources */,
 				11DA829A215F19E800E6970F /* HomePageTableCell.m in Sources */,
 				113DAEC3215E1FCA0018DCC6 /* CircleListModel.m in Sources */,
