@@ -34,8 +34,10 @@ static NSString *IdentifierHomePageHeader = @"IdentifierHomePageHeader";
         [RACObserve(self, testString) subscribeNext:^(id  _Nullable x) {
             @strongify(self);
             NSLog(@"---事件流已经由VM传递到了V中,进行展示数据");
-            UILabel *label = (UILabel *)[self.testView viewWithTag:677];
-            label.text = x;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                UILabel *label = (UILabel *)[self.testView viewWithTag:677];
+                label.text = x;
+            });
         }];
     }
     return self;

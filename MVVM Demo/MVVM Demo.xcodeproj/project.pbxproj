@@ -158,10 +158,10 @@
 		113DAEB2215E0EBC0018DCC6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				113DAEBE215E17CF0018DCC6 /* CircleListViewModel.h */,
-				113DAEBF215E17CF0018DCC6 /* CircleListViewModel.m */,
 				113DAECA215E2F650018DCC6 /* CircleCellViewModel.h */,
 				113DAECB215E2F650018DCC6 /* CircleCellViewModel.m */,
+				113DAEBE215E17CF0018DCC6 /* CircleListViewModel.h */,
+				113DAEBF215E17CF0018DCC6 /* CircleListViewModel.m */,
 				113DAECD215E36060018DCC6 /* CircleListHeaderViewModel.h */,
 				113DAECE215E36060018DCC6 /* CircleListHeaderViewModel.m */,
 				113DAED0215E36610018DCC6 /* CircleListSectionHeaderViewModel.h */,

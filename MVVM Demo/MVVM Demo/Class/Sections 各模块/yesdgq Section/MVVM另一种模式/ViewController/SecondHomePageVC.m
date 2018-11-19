@@ -57,6 +57,7 @@
 - (void)eventFlowDirection {
    
     RAC(self.mainView, testString) = RACObserve(self.viewModel, textString);
+    
     @weakify(self);
     [[self.mainView rac_signalForSelector:@selector(HomePageViewTestEventActionFlow) fromProtocol:@protocol(HomePageViewDelegate)] subscribeNext:^(RACTuple * _Nullable x) {
         @strongify(self);
