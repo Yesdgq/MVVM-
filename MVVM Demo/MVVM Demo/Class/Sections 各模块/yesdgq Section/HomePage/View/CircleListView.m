@@ -186,7 +186,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [self.viewModel.cellClickSubject sendNext:nil];
+    [self.viewModel.cellClickSubject sendNext:self.viewModel];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
